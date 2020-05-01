@@ -7,11 +7,15 @@
 	<% widget.forEach(w => { %>
 	<section>
 	<form action="delete?_method=DELETE" method="POST">
+		<div>
 		<%= w.name %>
 		<input type="hidden" name="name" value="<%= w.name %>">
+		</div>
+		<div>
 		<%= w.quantity %>
 		<input type="hidden" name="quantity" value="<%= w.quantity %>">
-		<input type="submit" name="Add Widgets">
+		</div>
+		<button type="submit">Delete Widget</button>
 	</form>
 </section>
 	<% })%>
@@ -28,7 +32,7 @@
 			<input type="text" name="quantity">
 		</div>
 		<div>
-			<input type="submit">
+			<button type="submit">Add Widget</button>
 		</div>
 		
 	</form>
