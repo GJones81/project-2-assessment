@@ -6,18 +6,18 @@
 <div>
 	<% widget.forEach(w => { %>
 	<section>
-	<form action="delete?_method=DELETE" method="POST">
-		<div>
-		<%= w.name %>
-		<input type="hidden" name="name" value="<%= w.name %>">
-		</div>
-		<div>
-		<%= w.quantity %>
-		<input type="hidden" name="quantity" value="<%= w.quantity %>">
-		</div>
-		<button type="submit">Delete Widget</button>
-	</form>
-</section>
+		<form action="delete?_method=DELETE" method="POST">
+			<div>
+			<%= w.name %>
+			<input type="hidden" name="name" value="<%= w.name %>">
+			</div>
+			<div>
+			<p>Quantity:<%= w.quantity %></p>
+			<input type="hidden" name="quantity" value="<%= w.quantity %>">
+			</div>
+			<button type="submit">DELETE</button>
+		</form>
+	</section>
 	<% })%>
 </div>
 
@@ -32,7 +32,7 @@
 			<input type="text" name="quantity">
 		</div>
 		<div>
-			<button type="submit">Add Widget</button>
+			<button type="submit">ADD WIDGET</button>
 		</div>
 		
 	</form>
