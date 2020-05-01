@@ -1,6 +1,6 @@
 <h1>Wacky Widgets</h1>
 <% if (widget == false) { %>
-	<h2>No Widgets</h2>
+	<h2>No Widgets Exists</h2>
 <% } %>
 
 <div>
@@ -11,12 +11,14 @@
 		<input type="hidden" name="name" value="<%= w.name %>">
 		<%= w.quantity %>
 		<input type="hidden" name="quantity" value="<%= w.quantity %>">
-		<input type="submit">
+		<input type="submit" name="Add Widgets">
 	</form>
 </section>
 	<% })%>
 </div>
 
+<hr>
+<h2>Add Widget</h2>
 <div>
 	<form action="/" method="POST">
 		<div>
